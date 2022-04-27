@@ -1,0 +1,58 @@
+[debug] [2022-04-27T06:11:22.457Z] ----------------------------------------------------------------------
+[debug] [2022-04-27T06:11:22.459Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-04-27T06:11:22.460Z] CLI Version:   10.7.1
+[debug] [2022-04-27T06:11:22.460Z] Platform:      win32
+[debug] [2022-04-27T06:11:22.460Z] Node Version:  v16.14.2
+[debug] [2022-04-27T06:11:22.461Z] Time:          Wed Apr 27 2022 11:41:22 GMT+0530 (India Standard Time)
+[debug] [2022-04-27T06:11:22.461Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-27T06:11:22.538Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-27T06:11:22.538Z] > authorizing via signed-in user (devanshah43@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Users\Admin\Desktop\netflix-clone-master\netflix-clone-master\main
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-04-27T06:11:32.073Z] Using project from CLI flag: my-netflix-1d2df
+[debug] [2022-04-27T06:11:32.077Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-netflix-1d2df [none]
+[debug] [2022-04-27T06:11:32.806Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-netflix-1d2df 200
+[debug] [2022-04-27T06:11:32.806Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-netflix-1d2df {"projectId":"my-netflix-1d2df","projectNumber":"582429518236","displayName":"my-netflix","name":"projects/my-netflix-1d2df","resources":{"hostingSite":"my-netflix-1d2df"},"state":"ACTIVE"}
+[info] i  Using project my-netflix-1d2df (my-netflix) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-04-27T06:12:05.622Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-04-27T06:12:06.042Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-04-27T06:12:06.042Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.11","browserURL":"https://www.gstatic.com/firebasejs/9.6.11/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.11/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.11/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.11/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.11/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.11/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.11/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.11/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.11/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.11/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.11/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore.memory.js"}}
+[debug] [2022-04-27T06:12:06.413Z] Error: ENOENT: no such file or directory, open 'D:\Users\Admin\Desktop\netflix-clone-master\netflix-clone-master\main\build\index.html\index.html'
+    at Object.openSync (node:fs:585:3)
+    at Object.writeFileSync (node:fs:2157:35)
+    at Object.createFileSync (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:43:6)
+    at Config.writeProjectFile (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:151:12)
+    at C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:175:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async doSetup (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:52:5)
+    at async init (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:36:9)
+[error] 
+[error] Error: An unexpected error has occurred.
